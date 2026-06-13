@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🌱 Which Crop Should I Grow?</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Parallax Background -->
+    <div class="parallax-bg"></div>
+
+    <!-- Floating Leaves Container -->
+    <div id="leaves"></div>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            🌱 which crop should I grow ?
+        </div>
+
+        <div class="toggle" onclick="toggleTheme()">
+            🌙
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1 class="typing">
+            Let's Start growing!
+        </h1>
+
+        <p>
+            Discover the perfect hydroponic crop for your space, lighting,
+            and experience level.
+        </p>
+
+        <button class="start-btn" onclick="startQuiz()">
+            Start Growing →
+        </button>
+
+    </section>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container" id="quiz">
+
+        <div class="progress-wrapper">
+
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <div class="eco-score">
+                Eco Score 🌿:
+                <span id="ecoScore">0</span>
+            </div>
+
+        </div>
+
+        <div class="meter-box">
+
+            <div class="meter-label">
+                Recommendation Accuracy
+            </div>
+
+            <div class="meter">
+                <div class="meter-fill" id="meterFill"></div>
+            </div>
+
+        </div>
+
+        <div class="glass-card">
+
+            <div class="question" id="question">
+                Question
+            </div>
+
+            <div class="options" id="options">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Results Section -->
+    <section class="results-section" id="resultsSection">
+
+        <div class="growth-area">
+
+            <div class="soil"></div>
+
+            <div class="plant" id="plant">
+                🌱
+            </div>
+
+        </div>
+
+        <h2 class="result-title">
+            Perfect Crops For You
+        </h2>
+
+        <p class="result-subtitle">
+            Based on your growing conditions
+        </p>
+
+        <div class="results-grid" id="resultsGrid">
+        </div>
+
+        <button class="restart-btn" onclick="location.reload()">
+
+            🔄 Start Over
+
+        </button>
+
+    </section>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
